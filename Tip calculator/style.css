@@ -1,0 +1,640 @@
+@font-face {
+    font-family: 'newFont';
+    src: url('/fonts/arkibal-serif-stencil-medium-webfont.woff2') format('woff2'),
+        url('/fonts/arkibal-serif-stencil-medium-webfont.woff') format('woff');
+        font-weight: lighter;
+}
+
+html {
+    background: url(https://www.rpnation.com/gallery/green-and-orange-gradient-9814.27270/full?d=1495406081) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.headerContainer {
+    margin-right: 50%;
+    padding-top: 2%;
+    text-align: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom right, #5a8a55, #378B2E);
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 1px 3px rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 414px) {
+    .headerContainer {
+        height: 125px;
+        font-size: 20px;
+    }
+}
+
+body {
+    font-family: 'newFont';
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px #000000;
+}
+
+.header {
+    font-family: 'newFont';
+    text-align: center;
+}
+
+.bodyContainer {
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, #3b6d33, #1A6811);
+    align-content: center;
+    justify-content: center;
+    margin: 32%;
+    display: flex;
+    margin-top: 5%;
+    color: #ffffff;
+    height: 600px;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .bodyContainer {
+        width: 75%;
+        margin: auto;
+        height: 900px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bodyContainer {
+        width: 75%;
+        margin: auto;
+        height: 600px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .bodyContainer {
+        width: 75%;
+        margin: auto;
+        height: 500px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bodyContainer {
+        width: 75%;
+        margin: auto;
+        height: 450px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bodyContainer {
+        width: 75%;
+        margin: auto;
+        height: 375px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+.tipContainer {
+    text-align: center;
+    align-items: center;
+    display: flexbox;
+    background-image: linear-gradient(to bottom right, #5FAE57, #9b9157);
+    border-radius: 10px;
+    width: 80%;
+    height: 75%;
+    margin-top: 7%;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .tipContainer {
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .tipContainer {
+        height: 80%;
+    }
+}
+
+.foodAmount {
+    text-align: center;
+    font-size: 22px;
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+}
+
+@media screen and (max-width: 414px) {
+    .foodAmount {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .foodAmount {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .foodAmount {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .serviceQuestion {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .serviceQuestion {
+        padding-top: 0%;
+    }
+}
+
+#badService {
+    font-family: 'newFont';
+    height: 50px;
+    width: 12%;
+    border-radius: 10px;
+    background-color: rgb(253, 205, 205);
+    visibility: visible;
+}
+
+#badService:hover {
+    background-color: rgb(255, 187, 187);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 1541px) {
+    #badService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #badService {
+        width: 22%;
+        margin: auto;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #badService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #badService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #badService {
+        width: 22%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+.okayService {
+    font-family: 'newFont';
+    height: 50px;
+    width: 12%;
+    border-radius: 10px;
+    background-color: rgb(253, 242, 205);
+    visibility: visible;
+}
+
+.okayService:hover {
+    background-color: rgb(255, 239, 187);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 1541px) {
+    .okayService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .okayService {
+        width: 22%;
+        margin: auto;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .okayService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .okayService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .okayService {
+        width: 22%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+.goodService {
+    font-family: 'newFont';
+    height: 50px;
+    width: 12%;
+    border-radius: 10px;
+    background-color: rgb(220, 253, 205);
+    visibility: visible;
+}
+
+.goodService:hover {
+    background-color: rgb(188, 253, 158);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 1541px) {
+    .goodService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .goodService {
+        width: 22%;
+        margin: auto;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .goodService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .goodService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .goodService {
+        width: 22%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+.excellentService {
+    font-family: 'newFont';
+    height: 50px;
+    width: 12%;
+    border-radius: 10px;
+    background-color: rgb(122, 245, 106);
+    visibility: visible;
+}
+
+.excellentService:hover {
+    background-color: rgb(70, 224, 50);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 1541px) {
+    .excellentService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1209px) {
+    .excellentService {
+        width: 22%;
+        margin: auto;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .excellentService {
+        width: 22%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .excellentService {
+        width: 22%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .excellentService {
+        width: 22%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .excellentService {
+        width: 25%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .excellentService {
+        width: 25%;
+        margin: auto;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .excellentService {
+        width: 25%;
+        margin: auto;
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .excellentService {
+        width: 25%;
+        margin: auto;
+        font-size: 7px;
+    }
+}
+
+.reset {
+    position: relative;
+    margin-top: 8%;
+    font-family: 'newFont';
+    height: 50px;
+    width: 12%;
+    border-radius: 10px;
+    background-color: rgb(209, 209, 209);
+    visibility: visible;
+}
+
+.reset:hover {
+    background-color: rgb(179, 179, 179);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 1541px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 33%;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 36%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 23.5%;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    .reset {
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 24.5%;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .reset {
+        margin-top: 25.5%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .reset {
+        margin-top: 26.5%;
+    }
+}
+
+@media screen and (max-width: 709px) {
+    .reset {
+        margin-top: 28.5%;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .reset {
+        margin-top: 30.5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .reset {
+        margin-top: 32.5%;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .reset {
+        margin-top: 37.5%;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .reset {
+        margin-top: 42.5%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .reset {
+        margin-top: 49.5%;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .reset {
+        margin-top: 55.5%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 10px;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 10px;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 10px;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .reset {
+        width: 50%;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tipTotal {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tipTotal {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tipTotal {
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tipTotal {
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tipTotal {
+        margin-top: 0%;
+
+    }
+}
+
+
