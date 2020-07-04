@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'newFont';
-    src: url('/fonts/arkibal-serif-stencil-medium-webfont.woff2') format('woff2'),
-        url('/fonts/arkibal-serif-stencil-medium-webfont.woff') format('woff');
+    src: url('arkibal-serif-stencil-medium-webfont.woff2') format('woff2'),
+        url('arkibal-serif-stencil-medium-webfont.woff') format('woff');
         font-weight: lighter;
 }
 
