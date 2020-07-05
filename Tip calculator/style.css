@@ -13,6 +13,7 @@ html {
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: 'newFont';
 }
 
 .headerContainer {
@@ -421,7 +422,6 @@ body {
     width: 12%;
     border-radius: 10px;
     background-color: rgb(209, 209, 209);
-    visibility: visible;
 }
 
 .reset:hover {
