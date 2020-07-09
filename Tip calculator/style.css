@@ -6,7 +6,8 @@
 }
 
 html {
-    background: url(https://www.rpnation.com/gallery/green-and-orange-gradient-9814.27270/full?d=1495406081) no-repeat center center fixed; 
+    background: rgb(22,116,53);
+    background: linear-gradient(32deg, rgba(22,116,53,1) 0%, rgba(247,181,127,1) 47%, rgba(169,245,49,1) 100%) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -79,7 +80,7 @@ body {
     .bodyContainer {
         width: 75%;
         margin: auto;
-        height: 600px;
+        height: 700px;
         margin-top: 30px;
         font-size: 14px;
     }
@@ -87,9 +88,9 @@ body {
 
 @media screen and (max-width: 414px) {
     .bodyContainer {
-        width: 75%;
+        width: 90%;
         margin: auto;
-        height: 500px;
+        height: 525px;
         margin-top: 30px;
         font-size: 14px;
     }
@@ -97,7 +98,17 @@ body {
 
 @media screen and (max-width: 375px) {
     .bodyContainer {
-        width: 75%;
+        width: 90%;
+        margin: auto;
+        height: 485px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bodyContainer {
+        width: 90%;
         margin: auto;
         height: 450px;
         margin-top: 30px;
@@ -107,7 +118,7 @@ body {
 
 @media screen and (max-width: 320px) {
     .bodyContainer {
-        width: 75%;
+        width: 95%;
         margin: auto;
         height: 375px;
         margin-top: 30px;
@@ -127,6 +138,67 @@ body {
     box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
+
+.borderOne {
+    border-bottom: 3px solid #185c0b;
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+    .borderOne {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .borderOne {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .borderOne {
+        padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .borderOne {
+        display: none;
+    }
+}
+
+.borderTwo {
+    border-bottom: 3px solid #185c0b;
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+    .borderTwo {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .borderTwo {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .borderTwo {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .borderTwo {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .tipContainer {
         height: 85%;
@@ -136,6 +208,13 @@ body {
 @media screen and (max-width: 414px) {
     .tipContainer {
         height: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tipContainer {
+        height: 85%;
+        width: 90%;
     }
 }
 
@@ -168,6 +247,11 @@ body {
 @media screen and (max-width: 1024px) {
     .serviceQuestion {
         padding-top: 10%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .serviceQuestion {
+        padding-top: 0%;
     }
 }
 
@@ -416,10 +500,10 @@ body {
 
 .reset {
     position: relative;
-    margin-top: 8%;
+    margin-top: 6%;
     font-family: 'newFont';
     height: 50px;
-    width: 12%;
+    width: 50%;
     border-radius: 10px;
     background-color: rgb(209, 209, 209);
 }
@@ -429,90 +513,21 @@ body {
     box-shadow: 1px 1px 5px black;
 }
 
-@media screen and (max-width: 1541px) {
-    .reset {
-        width: 50%;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 20%;
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .reset {
-        width: 50%;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 30%;
-    }
-}
-
-@media screen and (max-width: 989px) {
-    .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 33%;
-    }
-}
-
-@media screen and (max-width: 949px) {
-    .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 36%;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 40%;
-    }
-}
-
-@media screen and (max-width: 859px) {
-    .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 45%;
-    }
-}
-
-@media screen and (max-width: 806px) {
-    .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 50%;
+        margin-top: 7%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
-        margin-top: 23.5%;
+        margin-top: 19%;
     }
 }
 
 @media screen and (max-width: 753px) {
     .reset {
-        width: 50%;
-        height: 40px;
-        margin: auto;
-        font-size: 16px;
         margin-top: 24.5%;
     }
 }
@@ -573,38 +588,34 @@ body {
 
 @media screen and (max-width: 414px) {
     .reset {
-        width: 50%;
-        margin: auto;
+        position: relative;
         font-size: 10px;
-        margin-top: 25%;
+        margin-top: 9%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .reset {
-        width: 50%;
-        margin: auto;
         font-size: 10px;
-        margin-top: 10%;
+        margin-top: 12%;
+        height: 8%;
     }
 }
 
 @media screen and (max-width: 360px) {
     .reset {
-        width: 50%;
-        margin: auto;
         font-size: 10px;
-        margin-top: 10%;
+        margin-top: 9.5%;
     }
 }
 
 @media screen and (max-width: 320px) {
     .reset {
-        width: 50%;
-        margin: auto;
         font-size: 10px;
+        margin-top: 10%;
     }
 }
+
 
 @media screen and (max-width: 1024px) {
     .tipTotal {
@@ -624,17 +635,27 @@ body {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 360px) {
     .tipTotal {
-        margin-top: 18%;
+        margin-top: 12%;
     }
 }
 
 @media screen and (max-width: 320px) {
     .tipTotal {
-        margin-top: 0%;
+        margin-top: 10%;
+        font-size: 13px;
 
     }
 }
+
+@media screen and (max-width: 320px) {
+    .billTotal {
+        font-size: 13px;
+
+    }
+}
+
+
 
 
