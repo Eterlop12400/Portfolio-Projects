@@ -20,19 +20,18 @@ function numValidate(e) {
     let cost = Number(userInput.value);
     let tipAmount = + (cost * clickedTipPercentage).toFixed(2);
     let total = (cost + tipAmount).toFixed(2);
-    // let numValidate = tip / 100;
 
     if (cost === 0 || cost < 0) {
-    tipTotal.innerText = `Invalid Input:`
-    billTotal.innerText = `Please enter a number higher than 0.`
+        tipTotal.innerText = `Invalid Input:`;
+        billTotal.innerText = `Please enter a number higher than 0.`;
     } else {
-tipTotal.innerText = `You should tip: $${tipAmount}`
-billTotal.innerText = `Bill Total with tip: $${total}`
+        tipTotal.innerText = `You should tip: $${tipAmount}`;
+        billTotal.innerText = `Bill Total with tip: $${total}`;
     }
 }
 
 function resetValues () {
     document.querySelector('.foodAmount').value = "0.00";
-    tipTotal.innerText = `You should tip:`
-    billTotal.innerText = `Bill Total with tip:  `
+    tipTotal.innerText = `You should tip:`;
+    billTotal.innerText = `Bill Total with tip:  `;
 }
