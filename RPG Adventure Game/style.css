@@ -20,6 +20,11 @@ html {
     color: rgb(184, 184, 184);
 }
 
+input {
+    text-align: center;
+    border-radius: 5px;
+    height: 20px;
+}
 
 body {
     color: cornsilk;
@@ -38,6 +43,22 @@ body {
     border: 1px solid #fdfdd3;
     border-radius: 2%;
     background-color: rgb(87, 87, 87);
+}
+
+#warriorPlay {
+    height: 5%;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 1px 1px;
+}
+
+#magePlay {
+    height: 5%;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 1px 1px;
 }
 
 .question {
@@ -103,11 +124,13 @@ transform: translate3d(-100%,0,0)
 }
 
 .warriorContainer:hover {
+    visibility: visible;
     cursor: pointer;
     background-color: rgb(255, 125, 125);
     transition: ease-in .2s;
     transform: scale(1.02);
     opacity: 100%;  
+    box-shadow: inset 0 0 2px #000000;
 
 }
 
@@ -127,6 +150,7 @@ transform: translate3d(-100%,0,0)
     background-color: rgb(108, 213, 255);
     transform: scale(1.02);
     opacity: 100%;
+    box-shadow: inset 0 0 2px #000000;
 }
 
 
@@ -155,6 +179,14 @@ transform: translate3d(-100%,0,0)
 
 #classDescriptionMage {
     font-size: 1.25rem;
+}
+
+#warriorPlay {
+    visibility: hidden;
+}
+
+#magePlay {
+    visibility: hidden;
 }
 
 .footerContainer {
