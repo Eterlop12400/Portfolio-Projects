@@ -1,0 +1,12 @@
+/Users/ericterlop/Desktop/final/final/bin/Debug/netcoreapp3.1/final.deps.json
+/Users/ericterlop/Desktop/final/final/bin/Debug/netcoreapp3.1/final.runtimeconfig.json
+/Users/ericterlop/Desktop/final/final/bin/Debug/netcoreapp3.1/final.runtimeconfig.dev.json
+/Users/ericterlop/Desktop/final/final/bin/Debug/netcoreapp3.1/final.dll
+/Users/ericterlop/Desktop/final/final/bin/Debug/netcoreapp3.1/final.pdb
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.csprojAssemblyReference.cache
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.AssemblyInfoInputs.cache
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.AssemblyInfo.cs
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.csproj.CoreCompileInputs.cache
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.dll
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.pdb
+/Users/ericterlop/Desktop/final/final/obj/Debug/netcoreapp3.1/final.genruntimeconfig.cache

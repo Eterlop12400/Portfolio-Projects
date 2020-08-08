@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{FB1B846A-FE74-4BD7-BE30-03419589097C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="final/Library.cs">
+    <Files>
+      <File FileName="final/Program.cs" Line="42" Column="40" />
+      <File FileName="final/Menu.cs" />
+      <File FileName="final/Library.cs" Line="13" Column="1" />
+      <File FileName="final/Movie.cs" />
+      <File FileName="final/UI.cs" />
+      <File FileName="final/Validation.cs" />
+      <File FileName="final/Movies.txt" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="final" expanded="True" selected="True">
+            <Node name="final" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.final PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

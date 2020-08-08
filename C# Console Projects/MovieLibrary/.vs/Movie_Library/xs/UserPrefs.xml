@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{FB1B846A-FE74-4BD7-BE30-03419589097C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="final/Validation.cs">
+    <Files>
+      <File FileName="final/Program.cs" Line="7" Column="1" />
+      <File FileName="final/Menu.cs" Line="6" Column="1" />
+      <File FileName="final/Library.cs" Line="7" Column="1" />
+      <File FileName="final/Movie.cs" Line="5" Column="1" />
+      <File FileName="final/UI.cs" Line="4" Column="1" />
+      <File FileName="final/Validation.cs" Line="3" Column="2" />
+      <File FileName="final/Movies.txt" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Movie_Library" expanded="True">
+            <Node name="Movie_Library" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Validation.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Movie__Library PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

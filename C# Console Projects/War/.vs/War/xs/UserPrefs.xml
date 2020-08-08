@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{50C86D12-4A76-47E2-AB0A-DF7C81D340A7}|Default">
+  <MonoDevelop.Ide.ItemProperties.War PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="War/UI.cs">
+    <Files>
+      <File FileName="War/Card.cs" Line="3" Column="2" />
+      <File FileName="War/Player.cs" Line="5" Column="2" />
+      <File FileName="War/Program.cs" Line="5" Column="2" />
+      <File FileName="War/DeckUtility.cs" Line="5" Column="2" />
+      <File FileName="War/WarApp.cs" Line="5" Column="2" />
+      <File FileName="War/Validation.cs" Line="3" Column="2" />
+      <File FileName="War/UI.cs" Line="3" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="War" expanded="True">
+            <Node name="War" expanded="True">
+              <Node name="UI.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
