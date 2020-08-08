@@ -23,7 +23,7 @@
                     <img class="warriorSprite" src="https://i.imgur.com/X7EXFHs.png" alt="Warrior Sprite">
                 </div>
                 <p id="classDescriptionTitleWarrior">Special Power:</p>
-                <p id="classDescriptionWarrior">You start the game with 5 HP.</p>
+                <p id="classDescriptionWarrior" type='text'>You start the game with 5 HP.</p>
                 <button id="warriorPlay">Play Game!</button>
             </div>
 
@@ -36,6 +36,13 @@
                 <p id="classDescriptionMage">You gain an additional 2 seconds to your timer.</p>
                 <button id="magePlay">Play Game!</button>
             </div>
+
+            <div class = "gameTimer">
+                <span id='turnDirector'>Player Attack!</span>
+                <p id='time'>Begin</p>
+            </div>
+
+
         </div>
 
 
@@ -46,5 +53,9 @@
         </footer>
         
         <script src="logic.js" async defer></script>
+        <script src="hero.js" async defer></script>
+        <script src="monster.js" async defer></script>
+        <script src="menu.js" async defer></script>
+        <script src="battle.js" async defer></script>
     </body>
 </html>

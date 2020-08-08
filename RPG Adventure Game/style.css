@@ -213,3 +213,19 @@ transform: translate3d(-100%,0,0)
     color: rgb(153, 153, 153);
 }
 
+.gameTimer {
+    display: none;
+    font-size: 1em;
+}
+
+#turnDirector {
+    font-size: 1.5em;
+    color: rgb(143, 253, 143);
+}
+
+#time {
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+
