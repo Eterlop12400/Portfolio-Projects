@@ -6,7 +6,7 @@ Hi! my name is Eric Terlop and here is a list of all the projects I have so far 
 The goal for these projects was to show off some of the C# I have learned so far. These are only console applications but they do showcase the use of multiple class files and objects. My most recent C# project is the War game.
 
 _______
-### RPG Adventure Game
+### RPG Adventure Game*
 The goal for this game was to showcase some of the JavaScript skills I know and how I can use it to manipulate the elements on the page as well as using CSS to offset the need for so much JavaScript. This game is far from finished and is a work in progress passion project I am working on.
 ____
 ### Tip Calculator
