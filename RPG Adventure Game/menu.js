@@ -1,6 +1,8 @@
 let mageContainer = document.querySelector('.mageContainer');
 let warriorContainer = document.querySelector('.warriorContainer');
 
+let man = new Hero;
+
 
 
 
@@ -49,13 +51,17 @@ function GameBeginWarrior() {
         document.querySelector('#testWarrior').style.display = 'inline';
         document.querySelector('#testMonster').style.display = 'inline';
 
-        let man = new Hero(name,5,"Warrior");
+        man = new Hero(name,5,"Warrior", 9);
         document.querySelector('.playerHPBox').style.display = 'inline';
+        document.querySelector('.monsterHPBox').style.display = 'inline-flex';
         document.querySelector('#playerName').innerHTML = `${man.name}`;
         document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
+        document.querySelector('#monsterHealthBar').innerHTML = `HP: ${mon.hitPoints}`;
 
-            GenerateProblem();
+
+        setTimeout(RpgAdventureGame, 2000);    
         
+        display = document.querySelector('#time');
     }
 }
 
@@ -76,17 +82,19 @@ function GameBeginMage() {
         document.querySelector('#testWarrior').style.display = 'inline';
         document.querySelector('#testMonster').style.display = 'inline';
 
-        let man = new Hero(mageNames,4,"Mage");
+        man = new Hero(mageNames,4,"Mage", 12);
+        document.querySelector('.warriorFun').src = 'Sprites/mageTest.png';
+        document.querySelector('.warriorFun').style.height = '16vh';
         document.querySelector('.playerHPBox').style.display = 'inline';
-        document.querySelector('.warriorHealth').src = `https://i.imgur.com/wEYcKEE.png`;
-        document.querySelector('.warriorFun').src = `https://i.imgur.com/zjDEAyV.png`;
+        man.healthBar(man.hitPoints);
+        document.querySelector('.monsterHPBox').style.display = 'inline-flex';
         document.querySelector('#playerName').innerHTML = `${man.name}`;
         document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
+        document.querySelector('#monsterHealthBar').innerHTML = `HP: ${mon.hitPoints}`;
 
+        setTimeout(RpgAdventureGame, 2000); 
 
-            var timerValue = 12,
             display = document.querySelector('#time');
-            startTimer(timerValue, display);
 
 
         

@@ -221,7 +221,7 @@ transform: translate3d(-100%,0,0)
 
 #turnDirector {
     font-size: 1.5em;
-    color: rgb(143, 253, 143);
+    color: #8ffd8f;
 }
 
 #time {
@@ -232,7 +232,7 @@ transform: translate3d(-100%,0,0)
 .playerHPBox {
     display: none;
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 60vh;
     margin-right: 80vh;
     opacity: 85%;
 }
@@ -281,6 +281,32 @@ transform: translate3d(-100%,0,0)
     margin-top: auto;
 }
 
+.monsterHPBox {
+    display: none;
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 45vh;
+    opacity: 85%;
+}
+
+.monsterHealth {
+    position: absolute;
+    height: 6vh;
+    box-shadow: 2px 5px 18px #000000;
+}
+
+#monsterHealthBar {
+    position: fixed;
+    padding-left: 12vh;
+    padding-top: .25vh;
+}
+
+#monsterName {
+    position: fixed;
+    padding-left: 2vh;
+    padding-top: .25vh;
+}
+
 .monsterFun {
     height: 15vh;
 }
@@ -296,57 +322,30 @@ transform: translate3d(-100%,0,0)
     background-color: rgb(78, 78, 78);
     position: absolute;
     margin-top: 20vh;
-    width: 90vh;
-    height: 30vh;
+    padding-top: 2%;
+    width: 40vw;
+    height: 20vh;
     border-radius: 8px;
     opacity: 80%;
-    font-size: 4rem;
+    font-size: 3rem;
     box-shadow: 2px 2px 18px black;;
 }
 
-#funOne {
+.questionContainer button {
     cursor: pointer;
-    width: 5vh;
-    padding: 2vh 5vh;
+    text-align: center;
+    width: 70%;
+    height: 30%;
+    max-width: 6vw;
+    max-height: 3vw;
+    margin-top: 4%;
     border: none;
     border-radius: 4px;
     background-color: rgb(230, 230, 230);
     color: rgb(0, 0, 0);
     box-shadow: 2px 2px 2px black;
     opacity: 100%;
+    font-size: 1.25rem;
 }
 
-#funTwo {
-    cursor: pointer;
-    width: 5vh;
-    padding: 2vh 5vh;
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(230, 230, 230);
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 2px black;
-    opacity: 100%;
-}
-#funThree {
-    cursor: pointer;
-    width: 5vh;
-    padding: 2vh 5vh;
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(230, 230, 230);
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 2px black;
-    opacity: 100%;
-}
 
-#funFour {
-    cursor: pointer;
-    width: 5vh;
-    padding: 2vh 5vh;
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(230, 230, 230);
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 2px black;
-    opacity: 100%;
-}
