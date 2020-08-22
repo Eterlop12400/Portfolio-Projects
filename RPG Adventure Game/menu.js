@@ -46,12 +46,20 @@ function GameBeginWarrior() {
         document.querySelector('.gameContainer').style.backgroundImage = "url('https://i.imgur.com/fzzirTD.png')";
         document.querySelector('.gameTimer').style.display = 'inline';
 
-            var timerValue = 10,
-            display = document.querySelector('#time');
-            startTimer(timerValue, display);
+        document.querySelector('#testWarrior').style.display = 'inline';
+        document.querySelector('#testMonster').style.display = 'inline';
+
+        let man = new Hero(name,5,"Warrior");
+        document.querySelector('.playerHPBox').style.display = 'inline';
+        document.querySelector('#playerName').innerHTML = `${man.name}`;
+        document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
+
+            GenerateProblem();
         
     }
 }
+
+
 
 function GameBeginMage() {
     let mageNames = mageName.value;
@@ -65,9 +73,22 @@ function GameBeginMage() {
         document.querySelector('.gameContainer').style.backgroundImage = "url('https://i.imgur.com/fzzirTD.png')";
         document.querySelector('.gameTimer').style.display = 'inline';
 
-            var timerValue = 10,
+        document.querySelector('#testWarrior').style.display = 'inline';
+        document.querySelector('#testMonster').style.display = 'inline';
+
+        let man = new Hero(mageNames,4,"Mage");
+        document.querySelector('.playerHPBox').style.display = 'inline';
+        document.querySelector('.warriorHealth').src = `https://i.imgur.com/wEYcKEE.png`;
+        document.querySelector('.warriorFun').src = `https://i.imgur.com/zjDEAyV.png`;
+        document.querySelector('#playerName').innerHTML = `${man.name}`;
+        document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
+
+
+            var timerValue = 12,
             display = document.querySelector('#time');
             startTimer(timerValue, display);
+
+
         
     }
 }

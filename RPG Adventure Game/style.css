@@ -37,8 +37,8 @@ body {
     justify-content: center;
     justify-content: space-evenly;
     margin: 5rem auto;
-    height: 50rem;
-    width: 50%;
+    height: 70vh;
+    width: 100vh;
     text-align: center;
     border: 1px solid #fdfdd3;
     border-radius: 2%;
@@ -215,6 +215,7 @@ transform: translate3d(-100%,0,0)
 
 .gameTimer {
     display: none;
+    position: absolute;
     font-size: 1em;
 }
 
@@ -228,4 +229,124 @@ transform: translate3d(-100%,0,0)
     margin-top: 0px;
 }
 
+.playerHPBox {
+    display: none;
+    position: absolute;
+    margin-top: 30vh;
+    margin-right: 80vh;
+    opacity: 85%;
+}
 
+#playerHealth {
+    position: fixed;
+    padding-left: 12vh;
+    padding-top: .25vh;
+}
+
+#playerName {
+    position: fixed;
+    padding-left: 2vh;
+    padding-top: .25vh;
+}
+.warriorHealth {
+    position: absolute;
+    height: 6vh;
+    box-shadow: 2px 5px 18px #000000;
+}
+
+#testWarrior {
+    display: none;
+    position: relative;
+    margin-right: auto;
+    margin-left: 10vh;
+    margin-top: 40vh;
+    width: 20vh;
+    overflow: hidden;
+}
+
+.warriorFun {
+    animation: moveSpritesheet .6s steps(2) infinite;
+    height: 20vh;
+    width: 40vh;
+}
+
+
+#testMonster {
+    display: none;
+    height: 30vh;
+    width: 20vh;
+    overflow: hidden;
+    position: relative;
+    margin-right: 12vh;
+    margin-top: auto;
+}
+
+.monsterFun {
+    height: 15vh;
+}
+
+.monsterFun {
+    animation: moveSpritesheet .7s steps(3) infinite;
+}
+
+.questionContainer {
+    display: none;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgb(78, 78, 78);
+    position: absolute;
+    margin-top: 20vh;
+    width: 90vh;
+    height: 30vh;
+    border-radius: 8px;
+    opacity: 80%;
+    font-size: 4rem;
+    box-shadow: 2px 2px 18px black;;
+}
+
+#funOne {
+    cursor: pointer;
+    width: 5vh;
+    padding: 2vh 5vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#funTwo {
+    cursor: pointer;
+    width: 5vh;
+    padding: 2vh 5vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    opacity: 100%;
+}
+#funThree {
+    cursor: pointer;
+    width: 5vh;
+    padding: 2vh 5vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#funFour {
+    cursor: pointer;
+    width: 5vh;
+    padding: 2vh 5vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px black;
+    opacity: 100%;
+}
