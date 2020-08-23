@@ -7,7 +7,7 @@ The goal for these projects was to show off some of the C# I have learned so far
 
 _______
 ### RPG Adventure Game*
-The goal for this game was to showcase some of the JavaScript skills I know and how I can use it to manipulate the elements on the page as well as using CSS to offset the need for so much JavaScript. This game is far from finished and is a work in progress passion project I am working on.
+The goal for this game was to showcase some of the JavaScript skills I know and how I can use it to manipulate the elements on the page as well as using CSS to offset the need for so much JavaScript. I am using a timer to keep track of time for each problem. Using JavaScript to generate random problems to the user and generate an array of random answers, shuffling the array to present true random answers to the user. This game is far from finished and is a work in progress passion project I am working on.
 ____
 ### Tip Calculator
 The goal for this project was to use some simple logic using javascript to make a tip calculator. I also used JavaScript to validate user input.
