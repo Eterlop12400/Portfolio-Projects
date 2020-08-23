@@ -67,7 +67,13 @@ this.timer = timer;
         }
     }
 
-    Death() {
+    MageDeath() {
+        document.querySelector('.warriorFun').src = `Sprites/mageDead.png`;
+        document.querySelector('.warriorFun').style.width = '190vh';
+        document.querySelector('.warriorFun').style.animation = 'moveSpritesheet 1.5s steps(10) infinite';
+    }
+
+    WarriorDeath() {
         document.querySelector('.warriorFun').src = `Sprites/warriorDeath.png`;
         document.querySelector('.warriorFun').style.width = '190vh';
         document.querySelector('.warriorFun').style.animation = 'moveSpritesheet 1.5s steps(10) infinite';

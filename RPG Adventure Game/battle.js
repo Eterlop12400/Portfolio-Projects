@@ -127,7 +127,12 @@ function RpgAdventureGame() {
                 man.healthBar(man.hitPoints);
 
                 mon.Attack();
-                man.WarriorDamaged();
+
+                if(man.type === "Mage") {
+                    man.MageDamaged();
+                } else {
+                    man.WarriorDamaged();
+                }
 
                 if(man.hitPoints !== 0) {
                     setTimeout(generateProblem, 2000);
@@ -138,7 +143,12 @@ function RpgAdventureGame() {
                     document.querySelector('.gameTimer').style.display = 'none';
         
                     mon.Idle();
-                    man.Death();
+
+                    if(man.type === "Mage") {
+                        man.MageDeath();
+                    } else {
+                        man.WarriorDeath();
+                    }
         
                     setTimeout(gameOverWarrior, 900);
                 }
@@ -178,7 +188,12 @@ function RpgAdventureGame() {
                 document.querySelector('#turnDirector').style.display = 'none';
                 document.querySelector('.gameTimer').style.display = 'none';
     
-                man.IdleWarrior();
+                if(man.type === "Mage") {
+                    man.IdleMage();
+                } else {
+                    man.IdleWarrior();
+                }
+
                 mon.Death();
 
                 setTimeout(gameOverLizard, 700);
@@ -214,7 +229,11 @@ function RpgAdventureGame() {
 
             mon.Idle();
             
-            man.Death();
+            if(man.type === "Mage") {
+                man.MageDeath();
+            } else {
+                man.WarriorDeath();
+            }
 
             setTimeout(gameOverWarrior, 900);
         }
@@ -235,7 +254,7 @@ function gameOverWarrior() {
     document.querySelector('#funTwo').style.display = 'none';
     document.querySelector('#funThree').style.display = 'none';
     document.querySelector('#funFour').style.display = 'none';
-    document.getElementById("question").innerHTML = (`Game Over`);
+    document.getElementById("question").innerHTML = (`Game Over!`);
 }
 
 function gameOverLizard() {
