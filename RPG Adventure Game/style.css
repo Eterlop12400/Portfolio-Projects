@@ -32,11 +32,12 @@ body {
 
 
 .gameContainer {
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 5rem auto;
+    margin: 6vh auto;
     height: 70vh;
     width: 100vh;
     text-align: center;
@@ -114,10 +115,13 @@ transform: translate3d(-100%,0,0)
 }
 
 .warriorContainer {
+    justify-content: center;
     position: relative;
     border: 1px solid #fdfdd3;
-    width: 45%;
-    height: 80%;
+    width: 140vw;
+    max-width: 45%;
+    max-height: 80%;
+    height: 92vw;
     border-radius: 2%;
     background-color: rgb(206, 206, 206);
     opacity: 50%;
@@ -159,7 +163,7 @@ transform: translate3d(-100%,0,0)
 }
 
 #classDescriptionTitleWarrior {
-    padding-top: 10%;
+    padding-top: 4vh;
     font-size: 1.5rem;
     text-decoration: underline;
 }
@@ -348,4 +352,68 @@ transform: translate3d(-100%,0,0)
     font-size: 1.25rem;
 }
 
+@media only screen and (max-height: 1020px) {
+    #warriorPlay {
+        width: 25%;
+    }
 
+    .warriorSprite {
+        height: 14rem;
+    }
+
+    #classTitleWarrior {
+        margin-bottom: 0;
+    }
+
+    #classTitleMage {
+        margin-bottom: 0;
+    }
+
+    .warriorCharacter {
+        height: 220px;
+    }
+
+    #classDescriptionTitleWarrior {
+        padding-top: 5%;
+    }
+
+    #classDescriptionTitleMage {
+        margin: 0;
+    }
+
+    .mageCharacter {
+        margin-top: 7%;
+        height: 200px;
+    }
+
+    .question {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .warriorSprite {
+        height: 14rem;
+    }
+
+    #classTitleWarrior {
+        margin-bottom: 0;
+    }
+
+    .warriorCharacter {
+        height: 211px;
+    }
+
+    #classDescriptionTitleWarrior {
+        padding-top: 0px;
+    }
+
+    .warriorHealth {
+        height: 7vh;
+    }
+
+    .monsterHealth {
+        height: 7vh;
+    }
+
+}
