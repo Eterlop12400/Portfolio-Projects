@@ -1,5 +1,5 @@
 
-let mon = new Monster("efewf",4,"Warrior");
+let mon = new Monster("placeHolder",4,"LizardMan");
 
 
 
@@ -110,7 +110,6 @@ function RpgAdventureGame() {
         let timer = duration, seconds;
         timerFun = setInterval(function () {
             seconds = parseInt(timer % 60, 10);
-            seconds = seconds < 10 ?  + seconds : seconds;
     
             display.textContent = seconds;
     
