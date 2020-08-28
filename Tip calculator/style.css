@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'newFont';
+    font-family: 'arkibal';
     src: url('arkibal-serif-stencil-medium-webfont.woff2') format('woff2'),
         url('arkibal-serif-stencil-medium-webfont.woff') format('woff');
         font-weight: lighter;
@@ -7,18 +7,12 @@
 
 html {
     background: rgb(22,116,53);
-    background: linear-gradient(32deg, rgba(22,116,53,1) 0%, rgba(247,181,127,1) 47%, rgba(169,245,49,1) 100%) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: linear-gradient(32deg, rgba(22,116,53,1) 0%, rgba(247,181,127,1) 47%, rgba(169,245,49,1) 100%) no-repeat center center fixed;
     background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
 }
 
 .headerContainer {
-    margin-right: 50%;
     padding-top: 2%;
     text-align: center;
     align-content: center;
@@ -40,25 +34,22 @@ html {
 }
 
 body {
-    font-family: 'newFont';
-    margin-left: auto;
-    margin-right: auto;
+    font-family: arkibal, helvetica, arial;
     text-shadow: 2px 2px #000000;
 }
 
 .header {
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     text-align: center;
 }
 
-.bodyContainer {
-    font-size: 20px;
-    background-image: linear-gradient(to bottom right, #3b6d33, #1A6811);
+.site-content {
+    display: flex;
     align-content: center;
     justify-content: center;
-    margin: 32%;
-    display: flex;
-    margin-top: 5%;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, #3b6d33, #1A6811);
+    margin: 5% 32% 32% 32%;
     color: #ffffff;
     height: 600px;
     width: 35%;
@@ -67,17 +58,16 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .bodyContainer {
+    .site-content {
         width: 75%;
-        margin: auto;
+        margin: 30px auto auto;
         height: 900px;
-        margin-top: 30px;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .bodyContainer {
+    .site-content {
         width: 75%;
         margin: auto;
         height: 700px;
@@ -87,7 +77,7 @@ body {
 }
 
 @media screen and (max-width: 414px) {
-    .bodyContainer {
+    .site-content {
         width: 90%;
         margin: auto;
         height: 525px;
@@ -97,7 +87,7 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    .bodyContainer {
+    .site-content {
         width: 90%;
         margin: auto;
         height: 485px;
@@ -107,7 +97,7 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .bodyContainer {
+    .site-content {
         width: 90%;
         margin: auto;
         height: 450px;
@@ -117,7 +107,7 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .bodyContainer {
+    .site-content {
         width: 95%;
         margin: auto;
         height: 375px;
@@ -129,7 +119,6 @@ body {
 .tipContainer {
     text-align: center;
     align-items: center;
-    display: flexbox;
     background-image: linear-gradient(to bottom right, #5FAE57, #9b9157);
     border-radius: 10px;
     width: 80%;
@@ -197,6 +186,10 @@ body {
     .borderTwo {
         display: none;
     }
+
+    .foodAmount {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -238,12 +231,6 @@ body {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .foodAmount {
-        width: 30%;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .serviceQuestion {
         padding-top: 10%;
@@ -262,7 +249,7 @@ body {
 }
 
 #badService {
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     height: 50px;
     width: 12%;
     border-radius: 10px;
@@ -313,7 +300,7 @@ body {
 }
 
 .okayService {
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     height: 50px;
     width: 12%;
     border-radius: 10px;
@@ -364,7 +351,7 @@ body {
 }
 
 .goodService {
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     height: 50px;
     width: 12%;
     border-radius: 10px;
@@ -386,36 +373,18 @@ body {
 
 @media screen and (max-width: 1024px) {
     .goodService {
-        width: 22%;
-        margin: auto;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .goodService {
-        width: 22%;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .goodService {
-        width: 22%;
-        margin: auto;
+        font-size: 0.75rem
     }
 }
 
 @media screen and (max-width: 375px) {
     .goodService {
-        width: 22%;
-        margin: auto;
         font-size: 10px;
     }
 }
 
 .excellentService {
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     height: 50px;
     width: 12%;
     border-radius: 10px;
@@ -439,7 +408,6 @@ body {
     .excellentService {
         width: 22%;
         margin: auto;
-        font-size: 11px;
     }
 }
 
@@ -447,7 +415,6 @@ body {
     .excellentService {
         width: 22%;
         margin: auto;
-        font-size: 10px;
     }
 }
 
@@ -455,7 +422,6 @@ body {
     .excellentService {
         width: 22%;
         margin: auto;
-        font-size: 10px;
     }
 }
 
@@ -470,7 +436,6 @@ body {
     .excellentService {
         width: 25%;
         margin: auto;
-        font-size: 10px;
     }
 }
 
@@ -478,7 +443,6 @@ body {
     .excellentService {
         width: 25%;
         margin: auto;
-        font-size: 9px;
     }
 }
 
@@ -486,7 +450,6 @@ body {
     .excellentService {
         width: 25%;
         margin: auto;
-        font-size: 8.5px;
     }
 }
 
@@ -494,14 +457,13 @@ body {
     .excellentService {
         width: 25%;
         margin: auto;
-        font-size: 7px;
     }
 }
 
 .reset {
     position: relative;
     margin-top: 6%;
-    font-family: 'newFont';
+    font-family: arkibal, helvetica, arial;
     height: 50px;
     width: 50%;
     border-radius: 10px;
