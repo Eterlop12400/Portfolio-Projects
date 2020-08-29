@@ -13,6 +13,10 @@ warriorContainer.addEventListener("click", CharacterSelectWarrior);
 document.querySelector('#warriorPlay').addEventListener("click", GameBeginWarrior);
 document.querySelector('#magePlay').addEventListener("click", GameBeginMage);
 
+document.querySelector('.copyright').addEventListener("click", copyRightMenu);
+document.querySelector('#exitContainer').addEventListener("click", copyRightMenuExit);
+
+
 
 
 function CharacterSelectMage() {
@@ -23,7 +27,8 @@ function CharacterSelectMage() {
     document.querySelector('#classDescriptionTitleMage').innerHTML = "Please enter your character name:";
     document.querySelector('#classDescriptionMage').innerHTML = "<input id='mageName' type='text' minLength='1' maxLength='12' placeholder='Character Name'>";
     document.querySelector('#magePlay').style.visibility = 'visible';
-    mageContainer.removeEventListener("click", CharacterSelectMage)
+    mageContainer.removeEventListener("click", CharacterSelectMage);
+    copyRightMenuExit();
 }
 
 function CharacterSelectWarrior() {
@@ -34,7 +39,8 @@ function CharacterSelectWarrior() {
     document.querySelector('#classDescriptionTitleWarrior').innerHTML = "Please enter your character name:";
     document.querySelector('#classDescriptionWarrior').innerHTML = "<input id='warriorName' type='text' minLength='1' maxLength='12' placeholder='Character Name'>";
     document.querySelector('#warriorPlay').style.visibility = 'visible';
-    warriorContainer.removeEventListener("click", CharacterSelectWarrior)
+    warriorContainer.removeEventListener("click", CharacterSelectWarrior);
+    copyRightMenuExit();
 }
 
 
@@ -60,6 +66,9 @@ function GameBeginWarrior() {
         document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
         document.querySelector('#monsterHealthBar').innerHTML = `HP: ${mon.hitPoints}`;
 
+        copyRightMenuExit();
+        document.querySelector('.copyright').removeEventListener("click", copyRightMenu);
+        document.querySelector('.copyright').style.cursor = "not-allowed";
 
         setTimeout(RpgAdventureGame, 2000);    
         
@@ -94,6 +103,11 @@ function GameBeginMage() {
         document.querySelector('#playerHealth').innerHTML = `HP: ${man.hitPoints}`;
         document.querySelector('#monsterHealthBar').innerHTML = `HP: ${mon.hitPoints}`;
 
+
+        copyRightMenuExit();
+        document.querySelector('.copyright').removeEventListener("click", copyRightMenu);
+        document.querySelector('.copyright').style.cursor = "not-allowed";
+
         setTimeout(RpgAdventureGame, 2000); 
 
             display = document.querySelector('#time');
@@ -101,4 +115,28 @@ function GameBeginMage() {
 
         
     }
+}
+
+function copyRightMenu() {
+    document.querySelector('#exitContainer').style.display = 'flex';
+    document.querySelector('.questionContainer').style.display = 'inline-block';
+    document.querySelector('#answerOne').style.display = 'none';
+    document.querySelector('#answerTwo').style.display = 'none';
+    document.querySelector('#answerThree').style.display = 'none';
+    document.querySelector('#answerFour').style.display = 'none';
+    document.querySelector('#details').style.display = 'inline-flex';
+    document.querySelector('#siteLink').style.display = 'inline-flex';
+    document.getElementById("question").innerHTML = (`Copyright Info:`);
+}
+
+function copyRightMenuExit() {
+    document.querySelector('.questionContainer').style.display = 'none';
+    document.querySelector('#exitContainer').style.display = 'none';
+    document.querySelector('#details').style.display = 'none';
+    document.querySelector('#siteLink').style.display = 'none';
+    document.querySelector('.questionContainer').style.display = 'none';
+    document.querySelector('#answerOne').style.display = 'inline-block';
+    document.querySelector('#answerTwo').style.display = 'inline-block';
+    document.querySelector('#answerThree').style.display = 'inline-block';
+    document.querySelector('#answerFour').style.display = 'inline-block';
 }

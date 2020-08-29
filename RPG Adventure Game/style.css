@@ -120,8 +120,7 @@ transform: translate3d(-100%,0,0)
     position: relative;
     flex-direction: column;
     border: 1px solid #fdfdd3;
-    width: 140vw;
-    max-width: 45%;
+    width: 45%;
     height: 80%;
     border-radius: 2%;
     background-color: rgb(206, 206, 206);
@@ -167,13 +166,11 @@ transform: translate3d(-100%,0,0)
 
 #classDescriptionTitleWarrior {
     font-size: 1.5vw;
-    padding-top: 2.75vw;
     text-decoration: underline;
 }
 
 #classDescriptionTitleMage {
     font-size: 1.5vw;
-    padding-top: 3vw;
     text-decoration: underline;
 }
 
@@ -337,8 +334,31 @@ transform: translate3d(-100%,0,0)
     height: 20vh;
     border-radius: 8px;
     opacity: 80%;
-    font-size: 3vw;
+    font-size: 2vw;
     box-shadow: 2px 2px 18px black;;
+}
+
+#details {
+    display: none;
+    padding-top: 3%;
+    font-size: 1vw;
+}
+
+#siteLink {
+    display: none;
+    font-size: 1vw;
+}
+
+#exitContainer {
+    display: none;
+    position: fixed;
+    margin-left: 37%;
+    margin-top: -4%;
+}
+
+#exitContainer:hover {
+    color: rgb(153, 153, 153);
+    cursor: pointer;
 }
 
 .questionContainer button {
@@ -392,6 +412,22 @@ transform: translate3d(-100%,0,0)
 
     .monsterHealth {
         height: 7vh;
+    }
+
+    .warriorCharacter {
+        display: none;
+    }
+
+    #classDescriptionTitleWarrior {
+        margin-top: 40%;
+    }
+
+    .mageCharacter {
+        display: none;
+    }
+
+    #classDescriptionTitleMage {
+        margin-top: 40%;
     }
 
 }

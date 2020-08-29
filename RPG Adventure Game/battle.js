@@ -22,6 +22,8 @@ function RpgAdventureGame() {
     userAnswerThree.addEventListener("click", answerChecker);
     userAnswerFour.addEventListener("click", answerChecker);
 
+
+
     generateProblem();
 
     function generateProblem() {
