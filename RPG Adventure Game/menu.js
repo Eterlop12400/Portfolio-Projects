@@ -6,6 +6,8 @@ let man = new Hero;
 
 
 
+
+
 mageContainer.addEventListener("click", CharacterSelectMage);
 warriorContainer.addEventListener("click", CharacterSelectWarrior);
 document.querySelector('#warriorPlay').addEventListener("click", GameBeginWarrior);
@@ -16,8 +18,8 @@ document.querySelector('#magePlay').addEventListener("click", GameBeginMage);
 function CharacterSelectMage() {
     mageContainer.style.width = '75%';
     warriorContainer.style.display = 'none';
-    document.querySelector('.mageContainer').style.backgroundColor = 'rgb(108, 213, 255)';
-    document.querySelector('.mageContainer').style.opacity = '100%';
+    mageContainer.style.backgroundColor = 'rgb(108, 213, 255)';
+    mageContainer.style.opacity = '100%';
     document.querySelector('#classDescriptionTitleMage').innerHTML = "Please enter your character name:";
     document.querySelector('#classDescriptionMage').innerHTML = "<input id='mageName' type='text' minLength='1' maxLength='12' placeholder='Character Name'>";
     document.querySelector('#magePlay').style.visibility = 'visible';
@@ -27,8 +29,8 @@ function CharacterSelectMage() {
 function CharacterSelectWarrior() {
     warriorContainer.style.width = '75%';
     mageContainer.style.display = 'none';
-    document.querySelector('.warriorContainer').style.backgroundColor = 'rgb(255, 125, 125)';
-    document.querySelector('.warriorContainer').style.opacity = '100%';
+    warriorContainer.style.backgroundColor = 'rgb(255, 125, 125)';
+    warriorContainer.style.opacity = '100%';
     document.querySelector('#classDescriptionTitleWarrior').innerHTML = "Please enter your character name:";
     document.querySelector('#classDescriptionWarrior').innerHTML = "<input id='warriorName' type='text' minLength='1' maxLength='12' placeholder='Character Name'>";
     document.querySelector('#warriorPlay').style.visibility = 'visible';

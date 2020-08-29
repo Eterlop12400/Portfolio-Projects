@@ -8,14 +8,16 @@ function RpgAdventureGame() {
     let solution;
     let generateAnswer;
     let timerValue = man.timer;
-    let timerFun;
+    let clockTime;
+    let time = document.querySelector('#time')
 
-    let userAnswer = document.getElementById('funOne');
-    let userAnswerTwo = document.getElementById('funTwo');
-    let userAnswerThree = document.getElementById('funThree');
-    let userAnswerFour = document.getElementById('funFour');
+    let userAnswerOne = document.getElementById('answerOne');
+    let userAnswerTwo = document.getElementById('answerTwo');
+    let userAnswerThree = document.getElementById('answerThree');
+    let userAnswerFour = document.getElementById('answerFour');
+
     
-    userAnswer.addEventListener("click", answerChecker);
+    userAnswerOne.addEventListener("click", answerChecker);
     userAnswerTwo.addEventListener("click", answerChecker);
     userAnswerThree.addEventListener("click", answerChecker);
     userAnswerFour.addEventListener("click", answerChecker);
@@ -23,7 +25,7 @@ function RpgAdventureGame() {
     generateProblem();
 
     function generateProblem() {
-       
+
         mon.Idle();
 
         if(man.type === "Mage") {
@@ -35,7 +37,7 @@ function RpgAdventureGame() {
 
         document.querySelector('#turnDirector').innerHTML = 'Player Attack!';
         document.querySelector('#turnDirector').style.color = "#8ffd8f";
-        clearInterval(timerFun);
+        clearInterval(clockTime);
         
         document.querySelector('.questionContainer').style.display = 'inline-block';
         
@@ -92,30 +94,30 @@ function RpgAdventureGame() {
     function changeValue(){
         shuffle(generateAnswer);
     
-        document.getElementById("funOne").value = `${generateAnswer[0]}`;
-        document.getElementById("funOne").innerHTML = `${generateAnswer[0]}`;
+        userAnswerOne.value = `${generateAnswer[0]}`;
+        userAnswerOne.innerHTML = `${generateAnswer[0]}`;
     
-        document.getElementById("funTwo").value = `${generateAnswer[1]}`;
-        document.getElementById("funTwo").innerHTML = `${generateAnswer[1]}`;
+        userAnswerTwo.value = `${generateAnswer[1]}`;
+        userAnswerTwo.innerHTML = `${generateAnswer[1]}`;
     
-        document.getElementById("funThree").value = `${generateAnswer[2]}`;
-        document.getElementById("funThree").innerHTML = `${generateAnswer[2]}`;
+        userAnswerThree.value = `${generateAnswer[2]}`;
+        userAnswerThree.innerHTML = `${generateAnswer[2]}`;
     
-        document.getElementById("funFour").value = `${generateAnswer[3]}`;
-        document.getElementById("funFour").innerHTML = `${generateAnswer[3]}`;
+        userAnswerFour.value = `${generateAnswer[3]}`;
+        userAnswerFour.innerHTML = `${generateAnswer[3]}`;
     
     }
     
     function startTimer(duration, display) {
         let timer = duration, seconds;
-        timerFun = setInterval(function () {
+        clockTime = setInterval(function () {
             seconds = parseInt(timer % 60, 10);
     
             display.textContent = seconds;
     
             if (--timer < 0) {
-                clearInterval(timerFun);
-                document.querySelector('#time').innerHTML = ' '
+                clearInterval(clockTime);
+                time.innerHTML = ' '
             } 
     
             if(timer == -1) {
@@ -158,7 +160,7 @@ function RpgAdventureGame() {
     // This method will check our input and compare it to the solution to the problem.
     function answerChecker() {
         let button = this.value * 1;
-        clearInterval(timerFun);
+        clearInterval(clockTime);
     
     
         if(button === solution) {
@@ -181,7 +183,7 @@ function RpgAdventureGame() {
             if(mon.hitPoints !== 0) {
                 setTimeout(generateProblem, 2000);
             } else if(mon.hitPoints === 0) {
-                clearInterval(timerFun);
+                clearInterval(clockTime);
                 document.querySelector('#turnDirector').innerHTML = 'Ohhh Yeah!';
                 document.querySelector('#turnDirector').style.color = 'yellow';
                 document.querySelector('#turnDirector').style.display = 'none';
@@ -220,7 +222,7 @@ function RpgAdventureGame() {
         if(man.hitPoints !== 0) {
             setTimeout(generateProblem, 2000);
         } else if(man.hitPoints === 0) {
-            clearInterval(timerFun);
+            clearInterval(clockTime);
             document.querySelector('#turnDirector').innerHTML = 'Ohhh Nooooo!';
             document.querySelector('#turnDirector').style.color = 'red';
             document.querySelector('#turnDirector').style.display = 'none';
@@ -249,10 +251,10 @@ function gameOverWarrior() {
     document.querySelector('.monsterHPBox').style.display = 'none';
     document.querySelector('.warriorFun').style.display = 'none';
     document.querySelector('.questionContainer').style.display = 'inline-block';
-    document.querySelector('#funOne').style.display = 'none';
-    document.querySelector('#funTwo').style.display = 'none';
-    document.querySelector('#funThree').style.display = 'none';
-    document.querySelector('#funFour').style.display = 'none';
+    document.querySelector('#answerOne').style.display = 'none';
+    document.querySelector('#answerTwo').style.display = 'none';
+    document.querySelector('#answerThree').style.display = 'none';
+    document.querySelector('#answerFour').style.display = 'none';
     document.getElementById("question").innerHTML = (`Game Over!`);
 }
 
@@ -262,10 +264,10 @@ function gameOverLizard() {
     document.querySelector('.monsterHPBox').style.display = 'none';
     document.querySelector('.warriorFun').style.display = 'none';
     document.querySelector('.questionContainer').style.display = 'inline-block';
-    document.querySelector('#funOne').style.display = 'none';
-    document.querySelector('#funTwo').style.display = 'none';
-    document.querySelector('#funThree').style.display = 'none';
-    document.querySelector('#funFour').style.display = 'none';
+    document.querySelector('#answerOne').style.display = 'none';
+    document.querySelector('#answerTwo').style.display = 'none';
+    document.querySelector('#answerThree').style.display = 'none';
+    document.querySelector('#answerFour').style.display = 'none';
     document.getElementById("question").innerHTML = (`You Win`);
 }
 

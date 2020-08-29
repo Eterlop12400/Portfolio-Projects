@@ -11,8 +11,8 @@
     <body>
 
         <div class="containerHeader">
-        <header class="mainGameTitle">RPG Adventure: </header>
-        <header class="subGameTitle">Finding the Sum</header>
+        <span class="mainGameTitle">RPG Adventure: </span>
+        <span class="subGameTitle">Finding the Sum</span>
         </div>
 
         <div class="gameContainer">
@@ -20,7 +20,7 @@
             <div class="warriorContainer">
                 <p id="classTitleWarrior">Warrior</p>
                 <div class="warriorCharacter">
-                    <img class="warriorSprite" src="https://i.imgur.com/X7EXFHs.png" alt="Warrior Sprite">
+                    <img class="warriorSprite" src="Sprites/warriorIdleFinal.png" alt="Warrior Sprite">
                 </div>
                 <p id="classDescriptionTitleWarrior">Special Power:</p>
                 <p id="classDescriptionWarrior" type='text'>You start the game with 5 HP.</p>
@@ -30,7 +30,7 @@
             <div class="mageContainer">
                 <p id="classTitleMage">Mage</p>
                 <div class="mageCharacter">
-                    <img class="mageSprite" src="https://i.imgur.com/DAhdUYs.png" alt="Mage Sprite">
+                    <img class="mageSprite" src="Sprites/mageIdleFinal.png" alt="Mage Sprite">
                 </div>
                 <p id="classDescriptionTitleMage">Special Power:</p>
                 <p id="classDescriptionMage">You gain an additional 2 seconds to your timer.</p>
@@ -55,19 +55,19 @@
             </div>
 
             <div id = 'testWarrior'>
-                <img class="warriorFun" src="https://i.imgur.com/TzIRqDI.png" alt="Warrior Sprite">
+                <img class="warriorFun" src="Sprites/idleTestWarrior.png" alt="Warrior Sprite">
             </div>
 
             <div id = 'testMonster'>
-                <img class="monsterFun" src="https://i.imgur.com/TpSXwS9.png" alt="Monster Sprite">
+                <img class="monsterFun" src="Sprites/monsterTest.png" alt="Monster Sprite">
             </div>
 
             <div class="questionContainer">
                 <div id="question"></div>
-                <button id="funOne" value="0"></button>
-                <button id="funTwo" value="0"></button>
-                <button id="funThree" value="0"></button>
-                <button id="funFour" value="0"></button>
+                <button id="answerOne" value="0"></button>
+                <button id="answerTwo" value="0"></button>
+                <button id="answerThree" value="0"></button>
+                <button id="answerFour" value="0"></button>
                 <p id="answerDisplay"> </p>
             </div>
 
@@ -79,8 +79,6 @@
             <span class="copyright">Copyright Info</span>
             <span class="howToPlay">How to Play</span>
         </footer>
-        
-        <script src="logic.js" async defer></script>
         <script src="hero.js" async defer></script>
         <script src="monster.js" async defer></script>
         <script src="menu.js" async defer></script>

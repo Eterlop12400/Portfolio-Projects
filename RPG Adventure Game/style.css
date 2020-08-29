@@ -48,7 +48,7 @@ body {
 
 #warriorPlay {
     height: 5%;
-    width: 15%;
+    width: 20%;
     border: none;
     border-radius: 5px;
     box-shadow: black 1px 1px;
@@ -56,7 +56,7 @@ body {
 
 #magePlay {
     height: 5%;
-    width: 15%;
+    width: 20%;
     border: none;
     border-radius: 5px;
     box-shadow: black 1px 1px;
@@ -64,8 +64,9 @@ body {
 
 .question {
     width: 100%;
-    top: 2%;
-    font-size: 2rem;
+    padding-top: 1%;
+    align-self: flex-start;
+    font-size: 2vh;
 }
 
 
@@ -73,28 +74,28 @@ body {
     text-align: center;
     display: inline-block;   
     height: 250px;
-    width: 150px;
+    width: 160px;
     overflow: hidden;
 }
 
 .warriorSprite {
     height: 15rem;
-    width: 30rem;
+    width: 75rem;
 }
 
 .mageCharacter {
     text-align: center;
     display: inline-block;
-    margin-top: 10%;
     height: 250px;
     width: 160px;
     overflow: hidden;
 }
 
 .mageSprite {
-    height: 13rem;
-    width: 35rem;
+    height: 14rem;
+    width: 105rem;
 }
+
 
 /* Moves the spritesheet to the left to animimate sprites. */
 @keyframes moveSpritesheet {
@@ -107,21 +108,21 @@ transform: translate3d(-100%,0,0)
 }
 
 .mageContainer:hover .mageSprite {
-    animation: moveSpritesheet .75s steps(3);
+    animation: moveSpritesheet 1.25s steps(9);
 }
 
 .warriorContainer:hover .warriorSprite {
-    animation: moveSpritesheet .75s steps(3);
+    animation: moveSpritesheet 1s steps(7);
 }
 
 .warriorContainer {
     justify-content: center;
     position: relative;
+    flex-direction: column;
     border: 1px solid #fdfdd3;
     width: 140vw;
     max-width: 45%;
-    max-height: 80%;
-    height: 92vw;
+    height: 80%;
     border-radius: 2%;
     background-color: rgb(206, 206, 206);
     opacity: 50%;
@@ -140,6 +141,8 @@ transform: translate3d(-100%,0,0)
 
 .mageContainer {
     position: relative;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid #fdfdd3;
     width: 45%;
     height: 80%;
@@ -159,30 +162,31 @@ transform: translate3d(-100%,0,0)
 
 
 #classTitleWarrior {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 #classDescriptionTitleWarrior {
-    padding-top: 4vh;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
+    padding-top: 2.75vw;
     text-decoration: underline;
 }
 
 #classDescriptionTitleMage {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
+    padding-top: 3vw;
     text-decoration: underline;
 }
 
 #classTitleMage {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 #classDescriptionWarrior {
-    font-size: 1.25rem;
+    font-size: 1vw;
 }
 
 #classDescriptionMage {
-    font-size: 1.25rem;
+    font-size: 1vw;
 }
 
 #warriorPlay {
@@ -333,7 +337,7 @@ transform: translate3d(-100%,0,0)
     height: 20vh;
     border-radius: 8px;
     opacity: 80%;
-    font-size: 3rem;
+    font-size: 3vw;
     box-shadow: 2px 2px 18px black;;
 }
 
@@ -342,7 +346,7 @@ transform: translate3d(-100%,0,0)
     text-align: center;
     width: 70%;
     height: 30%;
-    max-width: 6vw;
+    max-width: 20%;
     max-height: 3vw;
     margin-top: 4%;
     border: none;
@@ -353,6 +357,7 @@ transform: translate3d(-100%,0,0)
     opacity: 100%;
     font-size: 1.25rem;
 }
+
 
 @media only screen and (max-height: 1020px) {
     #warriorPlay {
@@ -368,27 +373,6 @@ transform: translate3d(-100%,0,0)
     }
 
     #classTitleMage {
-        margin-bottom: 0;
-    }
-
-    .warriorCharacter {
-        height: 220px;
-    }
-
-    #classDescriptionTitleWarrior {
-        padding-top: 5%;
-    }
-
-    #classDescriptionTitleMage {
-        margin: 0;
-    }
-
-    .mageCharacter {
-        margin-top: 7%;
-        height: 200px;
-    }
-
-    .question {
         margin-bottom: 0;
     }
 }
@@ -418,26 +402,6 @@ transform: translate3d(-100%,0,0)
 }
 
 @media only screen and (max-height: 800px) {
-    .warriorSprite {
-        height: 14rem;
-    }
-
-    #classTitleWarrior {
-        margin-bottom: 0;
-    }
-
-    .warriorCharacter {
-        height: 211px;
-    }
-
-    #classDescriptionTitleWarrior {
-        padding-top: 0px;
-    }
-
-    #classDescriptionTitleMage {
-        margin-top: 3%;
-    }
-
     .warriorHealth {
         height: 7vh;
     }
