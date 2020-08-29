@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QW9VErTezm+00j6x6JlAude24VUgc6ifOcsVPA0x/mmHwWtjo6lJUYt8EoJFV1J1iCiefZBW5fHUtv/XX9BdVg==",
+  "success": true,
+  "projectFilePath": "/Users/ericterlop/Desktop/MovieAPI/MovieAPI/MovieAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/ericterlop/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

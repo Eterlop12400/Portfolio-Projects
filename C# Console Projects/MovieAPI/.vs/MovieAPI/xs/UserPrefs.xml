@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{3BB41A55-1CC5-4C8E-9E94-FC611ABE7DBE}|Default">
+  <MonoDevelop.Ide.ItemProperties.MovieAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieAPI/Menu.cs">
+    <Files>
+      <File FileName="MovieAPI/Program.cs" Line="4" Column="2" />
+      <File FileName="MovieAPI/ApiConnector.cs" Line="7" Column="2" />
+      <File FileName="MovieAPI/Application.cs" Line="5" Column="2" />
+      <File FileName="MovieAPI/Season.cs" Line="3" Column="2" />
+      <File FileName="MovieAPI/Episode.cs" Line="3" Column="2" />
+      <File FileName="MovieAPI/Validation.cs" Line="3" Column="2" />
+      <File FileName="MovieAPI/UI.cs" Line="3" Column="2" />
+      <File FileName="MovieAPI/Menu.cs" Line="5" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieAPI" expanded="True">
+            <Node name="MovieAPI" expanded="True">
+              <Node name="Menu.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
