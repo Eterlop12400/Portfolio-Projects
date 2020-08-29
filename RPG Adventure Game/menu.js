@@ -4,10 +4,6 @@ let warriorContainer = document.querySelector('.warriorContainer');
 let man = new Hero;
 
 
-
-
-
-
 mageContainer.addEventListener("click", CharacterSelectMage);
 warriorContainer.addEventListener("click", CharacterSelectWarrior);
 document.querySelector('#warriorPlay').addEventListener("click", GameBeginWarrior);
@@ -15,7 +11,6 @@ document.querySelector('#magePlay').addEventListener("click", GameBeginMage);
 
 document.querySelector('.copyright').addEventListener("click", copyRightMenu);
 document.querySelector('#exitContainer').addEventListener("click", copyRightMenuExit);
-
 
 
 
@@ -139,4 +134,32 @@ function copyRightMenuExit() {
     document.querySelector('#answerTwo').style.display = 'inline-block';
     document.querySelector('#answerThree').style.display = 'inline-block';
     document.querySelector('#answerFour').style.display = 'inline-block';
+}
+
+function playAgain() {
+    document.getElementById("question").innerHTML = (`Play Again?`);
+    document.querySelector('#answerOne').style.display = 'inline-block';
+    document.querySelector('#answerTwo').style.display = 'inline-block';
+    document.querySelector('#answerOne').innerHTML = 'Yes';
+    document.querySelector('#answerOne').value = 'yes';
+    document.querySelector('#answerTwo').innerHTML = 'No';
+    document.querySelector('#answerTwo').value = 'no';
+
+    document.querySelector('#answerOne').addEventListener("click", answerChecker);
+    document.querySelector('#answerTwo').addEventListener("click", answerChecker);
+}
+
+function answerChecker() {
+    let button = this.value;
+
+    document.querySelector('#answerOne').removeEventListener("click", answerChecker);
+    document.querySelector('#answerTwo').removeEventListener("click", answerChecker);
+
+    if(button === "yes") {
+        location.reload();
+    } else {
+        document.querySelector('#answerOne').style.display = 'none';
+        document.querySelector('#answerTwo').style.display = 'none';
+        document.getElementById("question").innerHTML = (`Thank you for playing this game!`);
+    }
 }

@@ -244,34 +244,52 @@ function RpgAdventureGame() {
 
     
         } 
+
+        function gameOverWarrior() {
+            document.querySelector('#testMonster').style.display = 'none';
+            document.querySelector('.playerHPBox').style.display = 'none';
+            document.querySelector('.monsterHPBox').style.display = 'none';
+            document.querySelector('.warriorFun').style.display = 'none';
+            document.querySelector('.questionContainer').style.display = 'inline-block';
+            document.querySelector('#answerOne').style.display = 'none';
+            document.querySelector('#answerTwo').style.display = 'none';
+            document.querySelector('#answerThree').style.display = 'none';
+            document.querySelector('#answerFour').style.display = 'none';
+        
+            userAnswerOne.removeEventListener("click", answerChecker);
+            userAnswerTwo.removeEventListener("click", answerChecker);
+            userAnswerThree.removeEventListener("click", answerChecker);
+            userAnswerFour.removeEventListener("click", answerChecker);
+            
+            document.getElementById("question").innerHTML = (`Game Over!`);
+        
+            setTimeout(playAgain, 900);
+        }
+        
+        function gameOverLizard() {
+            document.querySelector('#testMonster').style.display = 'none';
+            document.querySelector('.playerHPBox').style.display = 'none';
+            document.querySelector('.monsterHPBox').style.display = 'none';
+            document.querySelector('.warriorFun').style.display = 'none';
+            document.querySelector('.questionContainer').style.display = 'inline-block';
+            document.querySelector('#answerOne').style.display = 'none';
+            document.querySelector('#answerTwo').style.display = 'none';
+            document.querySelector('#answerThree').style.display = 'none';
+            document.querySelector('#answerFour').style.display = 'none';
+        
+            userAnswerOne.removeEventListener("click", answerChecker);
+            userAnswerTwo.removeEventListener("click", answerChecker);
+            userAnswerThree.removeEventListener("click", answerChecker);
+            userAnswerFour.removeEventListener("click", answerChecker);
+        
+            document.getElementById("question").innerHTML = (`You Win`);
+        
+            setTimeout(playAgain, 900);
+        }
     }
 }
 
-function gameOverWarrior() {
-    document.querySelector('#testMonster').style.display = 'none';
-    document.querySelector('.playerHPBox').style.display = 'none';
-    document.querySelector('.monsterHPBox').style.display = 'none';
-    document.querySelector('.warriorFun').style.display = 'none';
-    document.querySelector('.questionContainer').style.display = 'inline-block';
-    document.querySelector('#answerOne').style.display = 'none';
-    document.querySelector('#answerTwo').style.display = 'none';
-    document.querySelector('#answerThree').style.display = 'none';
-    document.querySelector('#answerFour').style.display = 'none';
-    document.getElementById("question").innerHTML = (`Game Over!`);
-}
 
-function gameOverLizard() {
-    document.querySelector('#testMonster').style.display = 'none';
-    document.querySelector('.playerHPBox').style.display = 'none';
-    document.querySelector('.monsterHPBox').style.display = 'none';
-    document.querySelector('.warriorFun').style.display = 'none';
-    document.querySelector('.questionContainer').style.display = 'inline-block';
-    document.querySelector('#answerOne').style.display = 'none';
-    document.querySelector('#answerTwo').style.display = 'none';
-    document.querySelector('#answerThree').style.display = 'none';
-    document.querySelector('#answerFour').style.display = 'none';
-    document.getElementById("question").innerHTML = (`You Win`);
-}
 
 
 
